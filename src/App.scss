@@ -1,0 +1,13 @@
+@import 'vars.scss';
+@import 'Header/Header.scss';
+@import 'Header/Block-search.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}

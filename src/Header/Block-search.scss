@@ -1,0 +1,33 @@
+.block-search {
+  position: relative;
+  box-sizing: border-box;
+
+  &__input {
+    width: 85%;
+    display: block;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 0 6px 6px 0;
+  }
+
+  &__catalog {
+    width: 15%;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+  }
+
+  &__btn {
+    position: absolute;
+    width: auto;
+    right: 0;
+    height: 40px;
+    display: block;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    outline: none;
+  }
+}
