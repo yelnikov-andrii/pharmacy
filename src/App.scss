@@ -1,13 +1,26 @@
 @import 'vars.scss';
 @import 'Header/Header.scss';
 @import 'Header/Block-search.scss';
+@import 'Header/Header-list.scss';
+@import 'MainPage/Main-page.scss';
+@import 'MainPage/Main-page-list.scss';
+@import 'Medicines/Medicines.scss';
+@import 'Medicines/Medgroups.scss';
+@import 'Medicines/Medgroups-select.scss';
+@import 'Medicines/Product.scss';
 
 body {
   margin: 0;
   padding: 0;
-
 }
+
+.container-header {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
+  width: 65%;
 }

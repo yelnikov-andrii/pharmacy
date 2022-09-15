@@ -1,0 +1,108 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &:nth-child(2n) {
+    border-bottom: 1px solid $border_color;
+  }
+
+  &:nth-child(2n+1) {
+    border-bottom: 1px solid $border_color;
+    border-right: 1px solid $border_color;
+  }
+
+  &:nth-child(-n+2) {
+    border-top: 1px solid $border_color;
+  }
+
+  &__blockImg {
+    width: 15%;
+  }
+
+  &__blockTxt {
+    width: 75%;
+
+    &-title {
+      margin: 0 0 5px 0;
+      font-size: 17px;
+      color: $txt_color-2;
+    }
+
+    &-company {
+      margin: 0;
+      font-size: 12px;
+      color: $txt_color-3;
+    }
+  }
+
+  &__blockPrice {
+    display: flex;
+    justify-content: space-between;
+
+    &-price {
+      color: $basic-black;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0 0 0;
+    }
+  }
+
+  &__blockButtons {
+    display: flex;
+    gap: 5px;
+
+    &-btn {
+      border: none;
+      outline: none;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      width: 60px;
+
+      &:nth-child(1) {
+        &::before {
+          position: absolute;
+          content: '';
+          top: -12px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-image: url(../images/location.png);
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          border: 1px solid $border_color;
+          background-position: center;
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          position: absolute;
+          content: '';
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-image: url(../images/cart.png);
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &_txt {
+        font-size: 9px;
+        color: $basic-black;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

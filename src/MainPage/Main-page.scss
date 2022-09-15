@@ -1,0 +1,13 @@
+.main {
+  &-page {
+    &__title {
+        font-weight: 600;
+        font-size: 17px;
+        color: $txt_color;
+    }
+
+    &__list {
+        list-style: none;
+    }
+}
+}

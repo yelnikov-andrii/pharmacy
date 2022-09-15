@@ -18,6 +18,10 @@
     border-radius: 6px 0 0 6px;
     border: none;
     outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__btn {
@@ -29,5 +33,9 @@
     border: none;
     border-radius: 0 6px 6px 0;
     outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

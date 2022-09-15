@@ -1,0 +1,58 @@
+.medicines {
+  &__item {
+    font-size: 17px;
+    color: $txt_color;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+     
+    &-item {
+      margin-bottom: 20px;
+      position: relative;
+      border-bottom: 1px solid $border_color;
+      min-height: 30px;
+
+      &_button {
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 32px;
+        height: 32px;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+        background-color: #fff;
+        border: none;
+        outline: none;
+
+        &--opened {
+          background-color: $txt_color-select;
+          color: #fff;
+        }
+      }
+    }
+
+    &-link {
+      color: $txt_color;
+      font-size: 17px;
+      text-decoration: none;
+
+      &_list {
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.3s ease;
+        height: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 10px;
+
+        &--opened {
+          transform: scaleY(1);
+          transform-origin: top;
+          height: auto;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

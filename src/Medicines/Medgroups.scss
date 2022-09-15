@@ -1,0 +1,50 @@
+.medgroups {
+  font-size: 17px;
+  color: $txt_color;
+
+  &__btn-block {
+    display: flex;
+    width: 100%;
+  }
+
+  &__btn {
+    width: 50%;
+    border: none;
+    outline: none;
+    color: $txt_color;
+    font-size: 16px;
+    height: 40px;
+
+    &--active {
+      border-bottom: 5px solid green;
+    }
+  }
+
+  &__actionsBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__quantity {
+    font-size: 16px;
+    color: $txt_color;
+
+    &-qty {
+      color: $txt_color-1;
+    }
+  }
+
+  &__select {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 50%;
+    }
+  }
+}

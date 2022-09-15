@@ -1,0 +1,23 @@
+.main-page-list {
+  &__item {
+      margin-bottom: 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $txt_color;
+    font-size: 17px;
+    display: flex;
+      align-items: center;
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}

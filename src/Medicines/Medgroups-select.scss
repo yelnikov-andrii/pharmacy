@@ -1,0 +1,76 @@
+.medgroups-select {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+    &__main {
+        text-indent: 10px;
+        display: flex;
+        align-items: center;
+        margin: 7px 0;
+        width: 110px;
+        color: $txt_color-select;
+        border-bottom: 1px $txt_color-select dashed;
+        position: relative;
+        padding-left: 5px;
+
+        &:hover {
+          cursor: pointer;
+      }
+
+        &::before {
+          position: absolute;
+          top: -3px;
+          left: -10px;
+          content: '\2191';
+        }
+    }
+
+    &__content {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        max-width: 178px;
+        z-index: 2;
+        visibility: hidden;
+
+        &--open {
+          visibility: visible;
+        }
+  
+        &-item {
+            padding: 5px 0;
+            text-indent: 10px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+  
+            &_icon {
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+                margin-left: 5px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+  
+            &_title {
+                margin: 5px 0;
+            }
+  
+            &:nth-child(2n + 1) {
+                background-color: #efefef;
+            }
+  
+            &:hover {
+                background-color: #b3b3b3;
+                cursor: pointer;
+            }
+        }
+    }
+}

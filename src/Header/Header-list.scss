@@ -1,0 +1,14 @@
+.header-list {
+  &__item {
+    color: #fff;
+  } 
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 17px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+}
